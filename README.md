@@ -2,9 +2,6 @@
 
 This repository contains my daily Data Structures and Algorithms practice using Python.
 
-Goal:
-Solve at least 1 problem every day.
-
 Language:
 Python
 
