@@ -1,6 +1,6 @@
- # DSA Journey 🚀
+ # Python Journey 🚀
 
-This repository contains my daily Data Structures and Algorithms practice using Python.
+This repository contains my daily Data Structures and Algorithms,Numphy and Pandas practice using Python.
 
 Language:
 Python
