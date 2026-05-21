@@ -141,3 +141,199 @@ class dog(Animal):
   pass
 d1=Dog()
 d1.sound()
+
+# =========================================
+# INHERITANCE IN PYTHON - PRACTICE PROGRAMS
+# =========================================
+
+
+# =========================================
+# PROGRAM 1
+# Question:
+# Create a class Vehicle with info() method.
+# Create child class Car and inherit Vehicle class.
+# =========================================
+
+class Vehicle:
+
+    def info(self):
+        print("This is a vehicle")
+
+
+class Car(Vehicle):
+    pass
+
+
+car1 = Car()
+
+car1.info()
+
+
+
+# =========================================
+# PROGRAM 2
+# Question:
+# Create a class Animal using eat() method.
+# Create child class Cat using sound() method.
+# Call both methods using one object.
+# =========================================
+
+class Animal:
+
+    def eat(self):
+        print("Animal is eating")
+
+
+class Cat(Animal):
+
+    def sound(self):
+        print("Cat says meow")
+
+
+cat1 = Cat()
+
+cat1.eat()
+cat1.sound()
+
+
+
+# =========================================
+# PROGRAM 3
+# Question:
+# Create a class Person with constructor
+# storing name and age.
+# Create child class Teacher using super().
+# Store subject and print details.
+# =========================================
+
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+class Teacher(Person):
+
+    def __init__(self, name, age, subject):
+
+        super().__init__(name, age)
+
+        self.subject = subject
+
+    def details(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Subject:", self.subject)
+
+
+teacher1 = Teacher("Arun", 35, "Physics")
+
+teacher1.details()
+
+
+
+# =========================================
+# PROGRAM 4
+# Question:
+# Create class Vehicle with start() method.
+# Create child class Bike with ride() method.
+# Call both methods.
+# =========================================
+
+class Vehicle:
+
+    def start(self):
+        print("Vehicle started")
+
+
+class Bike(Vehicle):
+
+    def ride(self):
+        print("Bike is riding")
+
+
+bike1 = Bike()
+
+bike1.start()
+bike1.ride()
+
+
+
+# =========================================
+# POLYMORPHISM / METHOD OVERRIDING
+# =========================================
+
+
+# =========================================
+# PROGRAM 5
+# Question:
+# Create parent class Animal with sound().
+# Override sound() in child class Dog.
+# =========================================
+
+class Animal:
+
+    def sound(self):
+        print("Animal makes sound")
+
+
+class Dog(Animal):
+
+    def sound(self):
+        print("Dog barks")
+
+
+d1 = Dog()
+
+d1.sound()
+
+
+
+# =========================================
+# PROGRAM 6
+# Question:
+# Create class Bird with speak() method.
+# Override speak() in child class Parrot.
+# =========================================
+
+class Bird:
+
+    def speak(self):
+        print("Bird makes sound")
+
+
+class Parrot(Bird):
+
+    def speak(self):
+        print("Parrot talks")
+
+
+p1 = Parrot()
+
+p1.speak()
+
+
+
+# =========================================
+# PROGRAM 7
+# Question:
+# Create class Shape with draw() method.
+# Override draw() in child class Circle.
+# =========================================
+
+class Shape:
+
+    def draw(self):
+        print("Drawing shape")
+
+
+class Circle(Shape):
+
+    def draw(self):
+        print("Drawing circle")
+
+
+c1 = Circle()
+
+c1.draw()
