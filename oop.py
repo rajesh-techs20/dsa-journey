@@ -433,4 +433,37 @@ class student:
     print("Marks",self.__marks)
 s1=students(97)
 s1.showmarks()
-    
+
+#Abstraction
+Hiding implementation details
+real life examples
+ATM Machine
+Car driving
+Mobile Apps
+
+Example 
+from abc import ABC,abstractmethod;
+class Vehicle(ABC):
+  @abstractmethod 
+  def start(self):
+    pass 
+class Bike(Vehicle):
+  def start(self):
+    print("Bike started")
+b1= Bike()
+b1.start()
+
+Output 
+Bike started
+
+
+Another Example:
+from abc import ABC,abstractmethod
+class Animal(ABC):
+  def sound(self):
+    pass
+class Dog(Animal):
+  def sound(self):
+    print("Dog Barks")
+d1=Dog()
+d1.sound()
