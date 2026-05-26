@@ -1,3 +1,7 @@
+A students record managemenyt system .......
+
+
+
 class student:
     def __init__(self,name,marks):
         self.name=name
