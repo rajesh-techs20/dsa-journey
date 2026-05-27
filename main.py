@@ -15,7 +15,8 @@ while True:
     print("\n__Student Management System__\n")
     print("1.Add Student")
     print("2.Show Student Details")
-    print("3.Exit System")
+    print("3.Search Student")
+    print("4.Exit System")
 
     choice=int(input("Enter the choice:"))
 
@@ -36,6 +37,15 @@ while True:
             for student in students:
                 students.display()
     elif choice==3:
+        search=input("Enter the name of student to search:")
+        for student in students:
+            if search==student.name:
+                print("Student Found!")
+                print("Student Marks is",student.marks)
+                break
+            else: 
+                print("Student Not Found")
+    elif choice==4:
         print("EXITING THE SYSTEM.......")
         break
     else:
