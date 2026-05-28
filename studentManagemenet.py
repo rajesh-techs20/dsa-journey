@@ -16,7 +16,8 @@ while True:
     print("1.Add Student")
     print("2.Show Student Details")
     print("3.Search Student")
-    print("4.Exit System")
+    print("4.Topper")
+    print("5.Exit System")
 
     choice=int(input("Enter the choice:"))
 
@@ -46,6 +47,13 @@ while True:
             else: 
                 print("Student Not Found")
     elif choice==4:
+        topper=students[0
+
+        for student in students:
+            if student.marks>topper.marks:
+                topper=student
+                print("Topper of the class is",student.name,"scored",student.marks)
+    elif choice==5:
         print("EXITING THE SYSTEM.......")
         break
     else:
