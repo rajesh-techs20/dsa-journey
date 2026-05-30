@@ -544,3 +544,15 @@ class Bank:
 b1=Bank(90000)
 b1.display()
 
+ABSTRACTION 
+from abc import ABC, abstractmethod;
+class vehicle(ABC):
+  @abstractmethod
+  def sound(self):
+    pass
+class car(vehicle):
+  def sound(self):
+    print("Vroom Vroom")
+car1=car()
+car1.sound()
+  
