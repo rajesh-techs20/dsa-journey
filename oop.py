@@ -5,7 +5,7 @@ class student:
   name="Rajesh G R"
 #creating objects 
 s1=student()
-  print(s1.name)
+print(s1.name)
 
 class car:
   color="black"
