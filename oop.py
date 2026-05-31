@@ -552,7 +552,7 @@ class vehicle(ABC):
     pass
 class car(vehicle):
   def sound(self):
-    print("Vroom Vroom")
+    print("Vroom Vroom Vroom")
 car1=car()
 car1.sound()
   
