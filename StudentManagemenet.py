@@ -60,6 +60,9 @@ while True:
         for student in students:
             if delete==student.name:
                 students.remove(student)
+                with open("Students.details","w") as f:
+                    for student in students:
+                        f.write(student.marks+" "+str(student.marks)+"\n")
                 print("Student deleted successfully")
                 break
         else: 
@@ -70,6 +73,9 @@ while True:
             if update==student.name:
                 newMarks=int(input("Enter the new marks of student:")
                 student.marks=newMarks
+                with open("Students.details","w") as f:
+                    for student in students:
+                        f.write(student.name+" "+str(student.marks)+"\n")
                 print("Student marks uopdated succesfully")
     
 
