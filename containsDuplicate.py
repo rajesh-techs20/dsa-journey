@@ -8,3 +8,5 @@ class Solution(object):
         return True
       dup.add(num)
     return False
+
+Time complexity O(n)
