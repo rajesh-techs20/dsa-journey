@@ -9,3 +9,5 @@ class Solution(object):
       if current_sum>best_sum:
         best_sum=current_sum
     return best_sum
+
+Time complexity: O(n)
