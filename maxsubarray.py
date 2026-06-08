@@ -11,3 +11,4 @@ class Solution(object):
     return best_sum
 
 Time complexity: O(n)
+space complexity: O(1)
