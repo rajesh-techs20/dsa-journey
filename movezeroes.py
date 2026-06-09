@@ -7,3 +7,5 @@ class Solution(object):
         j+=1
     return nums
 
+Time complexity O(n)
+pace Complexity  O(1)
