@@ -15,3 +15,15 @@ print(b+10)
 print(b*3)
 print(np.sum(b))
 print(np.mean(b))
+
+#2D ARRAY
+import numpy as np
+matrix=np.array([
+    [1,2,3],
+    [4,5,6]
+])
+print(matrix)
+print(matrix.shape)
+print()
+print(matrix[0][0])
+print(matrix[1][2])
